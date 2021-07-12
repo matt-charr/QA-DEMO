@@ -12,34 +12,23 @@
 
   <p align="center">
     <em>Quantitative Analytics</em>
-    <br />
-    <a href="https://github.com/matt-charr/QA/tree/master/test">View Demo</a>
-    ·
-    <a href="https://github.com/matt-charr/QA/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/matt-charr/QA/pulls">Request Feature</a>
   </p>
 </p>
-
 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
-      <a href="#about-the-project">Genesis</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#genesis">Genesis</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#access">Access</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#compilation">Installation</a></li>
       </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#tools">Tools</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -49,45 +38,47 @@
 
 ## Genesis
 
-As all <a href="https://www.merriam-webster.com/words-at-play/padawan-the-new-intern"><em>Padawan</em></a> has the responsability to improve his  understanding of <a href="https://fr.wikipedia.org/wiki/Force_(Star_Wars)"><em>The Force</em></a>, it is the duty of all quants, from junior to senior, to constantly deepen his understanding of quantitative finance. 
+This repository aims at efficiently design a cutting-edge technology for market finance industry which, as discovering interesting theoretical concepts closely studied from masterbooks, will be fortified.
 
-The aim of this repository is to efficiently design a cutting-edge technology for market finance which, as discovering interesting theoretical concepts closely studied from masterbooks, will be fortified.
-
-I began this project while I was receiving the wonderful teaching from <a href="https://business-cool.com/decryptage/analyse/master-el-karoui-le-master-phare-pour-integrer-le-monde-de-la-finance-analytique/"><em>The Temple</em></a>.
-
-Feel free to contribute and/or share interesting addons of functionality.
+Feel free to concat the author should you desire any of tools below integrated within your own library.
 
 ## Getting Started
 
-### Market Data
+### Access
 
-This project uses market data provided by the below websites
+The repository **CORE** is located on GitHub with a restricted access.
 
-* [CBOE](https://www.cboe.com/) - spot and option data 
-* [EUREX](https://www.eurex.com/) - spot and option data
-* [IBORATE](http://iborate.com/eur-libor/) - LIBOR data
-* [SEBGROUP](https://sebgroup.com/) - SWAP data
+In case you wish to contribute and share interesting addons of functionality, please kindly contact the owner to explain your addins. 
 
-In particuler, the user can download spot and options data of his favorite ticker from the below sources, drop the excel file in the directory and rename it following closely the name convention.  <a href="https://github.com/matt-charr/QA/tree/master/data"><em>data/</em></a> 
+Subject to approval, a fixed time limited access will be granted.
 
 ### Installation
 
-In order to install the package, you simply need to clone this repository to your machine
+Once you received your access, you simply need to clone this repository to your machine:
 
   ```sh
-  mkdir Ho-Oh
-  cd Ho-Oh
+  mkdir myQA
+  cd myQA
   git clone https://github.com/matt-charr/QA.git
   ```
 
-To compile the project, it is necessary to have CMake installed within your machine.
+### Compilation
+
+To compile the project, it is necessary to have CMake installed on your machine.
+It is recommended to make a *bin* directory to store the executables and a *build* directory to store the makefiles.
 
   ```sh
-  cd Ho-Oh
+  cd myQA
   mkdir build bin
   cd build/
   cmake -G "MinGW Makefiles" ..
   make .
+  ```
+
+And:
+
+```sh
+  ../bin/test_*.cpp
   ```
 
 ## Tools
@@ -115,17 +106,13 @@ Go to the folder <a href="https://github.com/matt-charr/QA/tree/master/test"><em
 * **GENERAL SURFACE INTERPOLATION**
 * **TIMER**
 
-## Roadmap
-
-See the [open issues](https://github.com/matt-charr/QA/issues) for a list of proposed features (and known issues).
-
 ## Contributing
 
 Any contributions are **greatly appreciated**
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b myBranch`)
-3. Commit your Changes (`git commit -m 'add a feature'`)
+3. Commit your Changes (`git commit -m '* Add a feature.'`)
 4. Push to the Branch (`git push origin myBranch`)
 5. Open a Pull Request
 
