@@ -13,9 +13,6 @@
   <p align="center">
     <em>Quantitative Analytics</em>
     <br />
-    <a href="https://github.com/matt-charr/QA"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
     <a href="https://github.com/matt-charr/QA/tree/master/test">View Demo</a>
     ·
     <a href="https://github.com/matt-charr/QA/issues">Report Bug</a>
