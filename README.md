@@ -56,30 +56,30 @@ Subject to approval, a fixed time limited access will be granted.
 
 Once you received your access, you simply need to clone this repository to your machine:
 
-  ```sh
-  mkdir myQA
-  cd myQA
-  git clone https://github.com/matt-charr/QA.git
-  ```
+```sh
+mkdir myQA
+cd myQA
+git clone https://github.com/matt-charr/QA.git
+```
 
 ### Compilation
 
 To compile the project, it is necessary to have CMake installed on your machine.
 It is recommended to make a *bin* directory to store the executables and a *build* directory to store the makefiles.
 
-  ```sh
-  cd myQA
-  mkdir build bin
-  cd build/
-  cmake -G "MinGW Makefiles" ..
-  make .
-  ```
+```sh
+cd myQA
+mkdir build bin
+cd build/
+cmake -G "MinGW Makefiles" ..
+make .
+```
 
 And:
 
 ```sh
-  ../bin/test_*.cpp
-  ```
+../bin/test_*.cpp
+```
 
 to execute.
 
@@ -91,7 +91,82 @@ The project contains several functionnalities. Please find below a non exhaustiv
 
 You can import market data from a market data file you can create and drop in *data/internal/*. This file must contains lines of observables such as:
 
-<img src="https://github.com/matt-charr/QA-DEMO/blob/main/market_data2.png" alt="MarketData" width="1000" height="300">
+SPOT;*fixing_date*;*underlying*;*quote*
+RISK_FREE_RATE;*fixing_date*;*quote*
+REPO;*fixing_date*;*underlying*;*quote*
+VOLATILITY;*fixing_date*;*underlying*;*quote*
+CORRELATION;*fixing_date*;*underlying1*;*underlying2*;*quote*
+iVOLATILITY;*fixing_date*;*underlying*;*maturity*;*moneyness*;*bid*;*ask*
+iREPO;*fixing_date*;*underlying*;*maturity*;*bid*;*ask*
+FORWARD;*fixing_date*;*underlying*;*maturity*;*quote*
+OPTION;*fixing_date*;*underlying*;*maturity*;*strike*;*call_bid*;*call_ask*;*put_bid*;*put_ask*
+
+Once you have your market data file well located, you can download it into your code using:
+
+```cpp
+market_data<object::Data> src;
+downloader ("../data/internal/filename.csv", src);
+```
+
+** Extract implied volatility data of the ticker ^AAPL at 2021-05-25 with maturity 2022-07-15:
+
+```cpp
+market_data<object::ImpliedVolatility> dst;
+find<object::Data, object::ImpliedVolatility> (
+    src,
+    dst,
+    [] (object::Data const& data) 
+    {
+        return (
+            data.match_fixing_date (Date ("2021-05-25")) &&
+            data.match_underlying (Underlying ("^AAPL")) &&
+            data.match_maturity (Date ("2022-07-15"))
+        );
+    }
+);    
+```
+
+*dst* will contain the data. 
+
+** Extract data from CBOE.
+
+You can download the market data file of your favorite ticker at your birthday in [CBOE](https://www.cboe.com/), rename by *CBOE_MyTicker_%Y-%m-%d.csv*  and drop it to *data/external/*. The following functions will extract all the information of te file, drag options data to *option* and spot data to *spot*
+
+```cpp
+extract_information_from_cboe (Date ("1994-05-23"), Underlying ("^AAPL"), option, spot);   
+```
+
+** Convert option data to implied volatility.
+
+Suppose you have spot and option data and you wish to extract implied volatilities and drop it into *src*.
+
+```cpp
+convert_option_to_implied_volatility (option, spot, src);
+```
+
+** Plot implied volatility slice and surface.
+
+You can plot implied volatility slice and surface.
+
+```cpp
+find<object::Data, object::ImpliedVolatility> (
+    src,
+    dst,
+    [] (object::Data const& data) 
+    {
+        return (
+            data.match_fixing_date (Date ("2021-05-25")) &&
+            data.match_underlying (Underlying ("^AAPL"))
+        );
+    }
+);
+plot_implied_volatility_slice(dst, Date ("2023-05-25"));
+plot_implied_volatility_surface(dst);
+```
+
+** Demo.
+
+
 
 
 * **CONTRACT ALGEBRA**
