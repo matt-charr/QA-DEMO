@@ -1,14 +1,11 @@
-[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
 <p align="center">
-  <a href="https://github.com/matt-charr/QA">
-    <img src="https://github.com/matt-charr/QA/blob/master/image.PNG" alt="Logo" width="400" height="300">
+  <a href="https://github.com/matt-charr/QA-DEMO">
+    <img src="https://github.com/matt-charr/QA-DEMO/blob/master/image.jpg" alt="Logo" width="400" height="300">
   </a>
 
   <h3 align="center"><strong>QA</strong></h3>
