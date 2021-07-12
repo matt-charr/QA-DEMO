@@ -26,7 +26,7 @@
       <ul>
         <li><a href="#access">Access</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#compilation">Installation</a></li>
+        <li><a href="#compilation">Compilation</a></li>
       </ul>
     <li><a href="#tools">Tools</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -40,7 +40,7 @@
 
 This repository aims at efficiently design a cutting-edge technology for market finance industry which, as discovering interesting theoretical concepts closely studied from masterbooks, will be fortified.
 
-Feel free to concat the author should you desire any of tools below integrated within your own library.
+Feel free to concat the author should you desire any of the tools below integrated within your own library.
 
 ## Getting Started
 
@@ -81,29 +81,61 @@ And:
   ../bin/test_*.cpp
   ```
 
+to execute.
+
 ## Tools
 
-Go to the folder <a href="https://github.com/matt-charr/QA/tree/master/test"><em>test/</em></a> to test all the functionnalities provided by the project
+The project contains several functionnalities. Please find below a non exhaustive list:
 
-* **BLACK SCHOLES MODEL AND ITS TRICKS**
+* **MARKET DATA IMPORTER**
+
+You can import market data from a market data file you can create and drop in *data/internal/*. This file must contains lines of observables such as:
+
+<img src="https://github.com/matt-charr/QA-DEMO/blob/main/market_data.png" alt="MarketData" width="400" height="300">
+
+
 * **CONTRACT ALGEBRA**
-* **FLAT, LINEAR AND CUBIC SPLINE INTERPOLATION** 
-* **GREEKS DISCOVERER**
-* **FAST INTEGRAL COMPUTATION**
-* **FAST RANDOM INTEGRAL COMPUTATION**
-* **LINEAR PARTIAL DIFFERENTIAL EQUATION SOLVER**
-* **MULTI BLACK SCHOLES MODEL AND ITS TRICKS**
-* **LOCAL VOLATILITY MODEL AND ITS TRICKS**
-* **MARKET DATA FINDER**
-* **RANDOM VARIABLE SIMULATOR**
-* **MONTE CARLO COMPUTER**
-* **MONTE CARLO EXPLORER**
-* **PARTIAL DIFFERENTIAL EQUATION PRICER (1D)**
-* **STATIC REPLICATION PRICER (1D)**
-* **ROOTFINDER**
+
+* **MONTE CARLO INSPECTOR**
+
+* **PARTIAL DIFFERENTIAL EQUATION INSPECTOR**
+
+* **STATIC REPLICATION INSPECTOR**
+
+* **BLACK SCHOLES MODEL**
+
+* **MULTI BLACK SCHOLES MODEL**
+
+* **LOCAL VOLATILITY MODEL**
+
+
+
+
+
 * **STOCHASTIC VOLATILITY INSPIRED MODEL**
+
+
+
 * **SURFACE STOCHASTIC VOLATILITY INSPIRED MODEL**
-* **GENERAL SURFACE INTERPOLATION**
+
+* **RANDOM VARIABLE SIMULATOR**
+
+* **MONTE CARLO COMPUTER**
+
+* **CURVE INTERPOLATION** 
+
+* **SURFACE INTERPOLATION**
+
+
+
+* **FAST INTEGRAL COMPUTATION**
+
+
+
+* **FAST RANDOM INTEGRAL COMPUTATION**
+
+* **ROOTFINDER**
+
 * **TIMER**
 
 ## Contributing
