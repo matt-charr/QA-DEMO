@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/matt-charr/QA-DEMO">
-    <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image.jpg" alt="Logo" width="400" height="300">
+    <img src="https://github.com/matt-charr/QA-DEMO/blob/main/ribbon.jpg" alt="Logo" width="400" height="300">
   </a>
 
   <h3 align="center"><strong>QA</strong></h3>
