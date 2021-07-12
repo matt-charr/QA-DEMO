@@ -91,7 +91,7 @@ The project contains several functionnalities. Please find below a non exhaustiv
 
 You can import market data from a market data file you can create and drop in *data/internal/*. This file must contains lines of observables such as:
 
-<img src="https://github.com/matt-charr/QA-DEMO/blob/main/market_data2.png" alt="MarketData" width="800" height="300">
+<img src="https://github.com/matt-charr/QA-DEMO/blob/main/market_data2.png" alt="MarketData" width="1000" height="300">
 
 
 * **CONTRACT ALGEBRA**
