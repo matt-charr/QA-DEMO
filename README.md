@@ -46,7 +46,7 @@ Feel free to concat the author should you desire any of the tools below integrat
 
 ### Access
 
-The repository **CORE** is located on GitHub with a restricted access.
+The repository CORE is located on GitHub with a restricted access.
 
 In case you wish to contribute and share interesting addons of functionality, please kindly contact the owner to explain your addins. 
 
@@ -87,7 +87,7 @@ to execute.
 
 The project contains several functionnalities. Please find below a non exhaustive list:
 
-* **MARKET DATA IMPORTER**
+### MARKET DATA IMPORTER
 
 You can import market data from a market data file you can create and drop in *data/internal/*. This file must contains lines of observables such as:
 
@@ -136,7 +136,7 @@ You can download the market data file of your favorite ticker at your birthday i
 extract_information_from_cboe (Date ("1994-05-23"), Underlying ("^AAPL"), option, spot);   
 ```
 
-** Convert option data to implied volatility.
+ Convert option data to implied volatility.
 
 Suppose you have spot and option data and you wish to extract implied volatilities and drop it into *src*.
 
@@ -144,7 +144,7 @@ Suppose you have spot and option data and you wish to extract implied volatiliti
 convert_option_to_implied_volatility (option, spot, src);
 ```
 
-** Plot implied volatility slice and surface.
+ Plot implied volatility slice and surface.
 
 You can plot implied volatility slice and surface.
 
@@ -164,58 +164,59 @@ plot_implied_volatility_slice(dst, Date ("2023-05-25"));
 plot_implied_volatility_surface(dst);
 ```
 
-** Demo.
+* Demo.
+
+<img src="https://github.com/matt-charr/QA-DEMO/blob/main/image1.jpg" alt="Logo" width="400" height="300">
+
+<img src="https://github.com/matt-charr/QA-DEMO/blob/main/image2.jpg" alt="Logo" width="400" height="300">
+
+### CONTRACT ALGEBRA
+
+### MONTE CARLO INSPECTOR
+
+### PARTIAL DIFFERENTIAL EQUATION INSPECTOR
+
+### STATIC REPLICATION INSPECTOR
+
+### BLACK SCHOLES MODEL
+
+### MULTI BLACK SCHOLES MODEL
+
+### LOCAL VOLATILITY MODEL
 
 
 
 
-* **CONTRACT ALGEBRA**
 
-* **MONTE CARLO INSPECTOR**
-
-* **PARTIAL DIFFERENTIAL EQUATION INSPECTOR**
-
-* **STATIC REPLICATION INSPECTOR**
-
-* **BLACK SCHOLES MODEL**
-
-* **MULTI BLACK SCHOLES MODEL**
-
-* **LOCAL VOLATILITY MODEL**
+### STOCHASTIC VOLATILITY INSPIRED MODEL
 
 
 
+### SURFACE STOCHASTIC VOLATILITY INSPIRED MODEL
 
+### RANDOM VARIABLE SIMULATOR
 
-* **STOCHASTIC VOLATILITY INSPIRED MODEL**
+### MONTE CARLO COMPUTER
 
+### CURVE INTERPOLATION 
 
-
-* **SURFACE STOCHASTIC VOLATILITY INSPIRED MODEL**
-
-* **RANDOM VARIABLE SIMULATOR**
-
-* **MONTE CARLO COMPUTER**
-
-* **CURVE INTERPOLATION** 
-
-* **SURFACE INTERPOLATION**
+### SURFACE INTERPOLATION
 
 
 
-* **FAST INTEGRAL COMPUTATION**
+### FAST INTEGRAL COMPUTATION
 
 
 
-* **FAST RANDOM INTEGRAL COMPUTATION**
+### FAST RANDOM INTEGRAL COMPUTATION
 
-* **ROOTFINDER**
+### ROOTFINDER
 
-* **TIMER**
+### TIMER
 
 ## Contributing
 
-Any contributions are **greatly appreciated**
+Any contributions are greatly appreciated
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b myBranch`)
