@@ -169,7 +169,7 @@ plot_implied_volatility_surface(dst);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image1.PNG" alt="Logo" width="400" height="300">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image1.PNG" alt="Logo" width="600" height="450">
 
   <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image2.png" alt="Logo" width="600" height="450">    
 
@@ -177,6 +177,8 @@ plot_implied_volatility_surface(dst);
 
 
 ### CONTRACT ALGEBRA
+
+
 
 ### MONTE CARLO INSPECTOR
 
