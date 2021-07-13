@@ -99,7 +99,7 @@ CORRELATION;*fixing_date*;*underlying1*;*underlying2*;*quote* \
 iVOLATILITY;*fixing_date*;*underlying*;*maturity*;*moneyness*;*bid*;*ask* \
 iREPO;*fixing_date*;*underlying*;*maturity*;*bid*;*ask* \
 FORWARD;*fixing_date*;*underlying*;*maturity*;*quote* \
-OPTION;*fixing_date*;*underlying*;*maturity*;*strike*;*call_bid*;*call_ask;*put_bid*; *put_ask* \
+OPTION;*fixing_date*;*underlying*;*maturity*;*strike*;*call_bid*;*call_ask*;*put_bid*; *put_ask*
 
 Once you have your market data file well located, you can download it into your code using:
 
@@ -108,7 +108,7 @@ market_data<object::Data> src;
 downloader ("../data/internal/filename.csv", src);
 ```
 
-** Extract implied volatility data of the ticker ^AAPL at 2021-05-25 with maturity 2022-07-15:
+* Extract implied volatility data of the ticker ^AAPL at 2021-05-25 with maturity 2022-07-15:
 
 ```cpp
 market_data<object::ImpliedVolatility> dst;
@@ -128,7 +128,7 @@ find<object::Data, object::ImpliedVolatility> (
 
 *dst* will contain the data. 
 
-** Extract data from CBOE.
+* Extract data from CBOE.
 
 You can download the market data file of your favorite ticker at your birthday in [CBOE](https://www.cboe.com/), rename by *CBOE_MyTicker_%Y-%m-%d.csv*  and drop it to *data/external/*. The following functions will extract all the information of te file, drag options data to *option* and spot data to *spot*
 
