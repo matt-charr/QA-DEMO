@@ -243,7 +243,7 @@ printf (my_contract);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image3.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image3.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -257,7 +257,7 @@ for (auto date : dates) printf (*date);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image4.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image4.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -271,7 +271,7 @@ for (auto date : dates) printf (*date);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image5.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image5.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -285,7 +285,7 @@ for (auto underlying : underlyings) printf (*underlying);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image6.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image6.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -299,7 +299,7 @@ for (auto observable : observables) printf (*observable);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image7.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image7.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -314,7 +314,7 @@ auto my_future_contract = my_contract.move (Date ("%Y-%m-%d"), my_market_data);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image8.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image8.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -360,7 +360,7 @@ my_monte_carlo_inspector.refine (size, verbose);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image9.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image9.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -375,7 +375,7 @@ my_monte_carlo_inspector.refine_until_size (size, batch_size, verbose);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image10.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image10.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -390,7 +390,7 @@ my_monte_carlo_inspector.refine_until_precision (precision, batch_size, verbose)
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image11.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image11.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -402,7 +402,7 @@ my_monte_carlo_inspector.plot_convergence ();
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image12.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image12.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -414,7 +414,7 @@ my_monte_carlo_inspector.plot_price_distribution ();
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image13.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image13.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -426,7 +426,7 @@ my_monte_carlo_inspector.show ();
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image14.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image14.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -438,7 +438,7 @@ my_monte_carlo_inspector.plot_observable_distribution ();
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image15.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image15.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -491,7 +491,7 @@ partial_differential_equation_inspector.plot_slice (my_style, my_fixing_date);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image16.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image16.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -505,7 +505,7 @@ partial_differential_equation_inspector.plot_slice (my_style, my_start_date);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image17.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image17.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -553,19 +553,19 @@ LocalVolatilityModel
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image18.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image18.png" alt="Logo" width="600" height="450">
 
 </p>
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image19.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image19.png" alt="Logo" width="600" height="450">
 
 </p>
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image20.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image20.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -601,19 +601,19 @@ RawStochasticVolatilityInspiredModel
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image21.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image21.png" alt="Logo" width="600" height="450">
 
 </p>
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image22.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image22.png" alt="Logo" width="600" height="450">
 
 </p>
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image23.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image23.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -653,19 +653,19 @@ CubicSplinesInterpolation
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image24.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image24.png" alt="Logo" width="600" height="450">
 
 </p>
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image25.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image25.png" alt="Logo" width="600" height="450">
 
 </p>
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image26.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image26.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -704,7 +704,7 @@ my_interpolation.plot (
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image27.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image27.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -742,7 +742,7 @@ my_integral.run_until_size (size, verbose);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image28.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image28.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -756,7 +756,7 @@ my_integral.run_until_precision (precision, verbose);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image29.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image29.png" alt="Logo" width="600" height="450">
 
 </p>
 
@@ -768,13 +768,13 @@ my_integral.plot ();
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image30.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image30.png" alt="Logo" width="600" height="450">
 
 </p>
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image31.PNG" alt="Logo" width="600" height="450">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image31.png" alt="Logo" width="600" height="450">
 
 </p>
 
