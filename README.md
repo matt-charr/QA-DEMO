@@ -178,14 +178,14 @@ plot_implied_volatility_surface(dst);
 
 You can write any financial contract (except choosing style product) by:
 
-**Contract (*trading_date*, *cashflow*)** \
+**Contract (*trading_date*, *cashflow*)** 
 
 and using the following combinator:
 
 **Amount combinator**
 
 **CASH** (cash) \
-**SPOT** (*underlying*, *fixing_date*, *start_date*, *end_date*, *frequency*) \ 
+**SPOT** (*underlying*, *fixing_date*, *start_date*, *end_date*, *frequency*) \
 **AVERAGE** (*underlying*, *fixing_date*, *start_date*, *end_date*, *frequency*) \
 **BEST** (*underlyings*, *fixing_date*) \
 **INDEX** (*underlyings*, *fixing_date*, *weights*) \
