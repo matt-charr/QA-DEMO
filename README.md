@@ -243,7 +243,7 @@ printf (my_contract);
 
 <p align="center">
 
-  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image3.png" alt="Logo" width="100" height="100">
+  <img src="https://github.com/matt-charr/QA-DEMO/blob/main/image3.png" alt="Logo" width="500" height="200">
 
 </p>
 
