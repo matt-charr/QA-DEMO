@@ -220,14 +220,14 @@ and using the following combinator:
 
 Additionnaly you can add/sub cashflow/contract with same or different payment_date/schedule, multiply them by a constant or take the opposite to create more complex contract.
 
-For example, a call on *underlying* beginning at *%Y-%m-%d*, with maturity *%Y'-%m'-%d'* and strike *K* is:
+For example, a call on *my_underlying* beginning at *%Y-%m-%d*, with maturity *%Y'-%m'-%d'* and strike *my_strike* is:
 
 ```cpp
 auto my_contract = Contract (
   Date ("%Y-%m-%d"),
   PAY (
     MAX (
-      SPOT (Underlying (underlying), Date ("%Y'-%m'-%d'")) - K,
+      SPOT (Underlying (my_underlying), Date ("%Y'-%m'-%d'")) - my_strike,
       CASH (0.0)
     ),
     Date ("%Y'-%m'-%d'")
@@ -252,6 +252,7 @@ printf (my_contract);
 ```cpp
 std::vector<Date*> dates;
 contract.payment_dates(dates);
+for (auto date : dates) printf (*date);
 ```
 
 <p align="center">
@@ -265,6 +266,7 @@ contract.payment_dates(dates);
 ```cpp
 std::vector<Date*> dates;
 contract.fixing_dates(dates);
+for (auto date : dates) printf (*date);
 ```
 
 <p align="center">
@@ -278,6 +280,7 @@ contract.fixing_dates(dates);
 ```cpp
 std::vector<Underlying*> underlyings;
 contract.underlyings(underlyings);
+for (auto underlying : underlyings) printf (*underlying);
 ```
 
 <p align="center">
@@ -291,6 +294,7 @@ contract.underlyings(underlyings);
 ```cpp
 std::vector<Component*> observables;
 contract.observables(observables);
+for (auto observable : observables) printf (*observable);
 ```
 
 <p align="center">
@@ -300,6 +304,9 @@ contract.observables(observables);
 </p>
 
 * Time travelling.
+
+After pushing back a quote for *my_underlying* on *%Y-%m-%d* to the market data file. 
+*my_contract* integrates it in its description and *move* method return the same contract at the desired date:
 
 ```cpp
 auto my_future_contract = my_contract.move (Date ("%Y-%m-%d"), my_market_data);
