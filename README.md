@@ -91,15 +91,15 @@ The project contains several functionnalities. Please find below a non exhaustiv
 
 You can import market data from a market data file you can create and drop in *data/internal/*. This file must contains lines of observables such as:
 
-<br>SPOT;*fixing_date*;*underlying*;*quote*<br>
-<br>RISK_FREE_RATE;*fixing_date*;*quote*<br>
-<br>REPO;*fixing_date*;*underlying*;*quote*<br>
-<br>VOLATILITY;*fixing_date*;*underlying*;*quote*<br>
-<br>CORRELATION;*fixing_date*;*underlying1*;*underlying2*;*quote*<br>
-<br>iVOLATILITY;*fixing_date*;*underlying*;*maturity*;*moneyness*;*bid*;*ask*<br>
-<br>iREPO;*fixing_date*;*underlying*;*maturity*;*bid*;*ask*<br>
-<br>FORWARD;*fixing_date*;*underlying*;*maturity*;*quote*<br>
-<br>OPTION;*fixing_date*;*underlying*;*maturity*;*strike*;*call_bid*;*call_ask;*put_bid*; *put_ask*<br>
+SPOT;*fixing_date*;*underlying*;*quote* \
+RISK_FREE_RATE;*fixing_date*;*quote* \
+REPO;*fixing_date*;*underlying*;*quote* \
+VOLATILITY;*fixing_date*;*underlying*;*quote* \
+CORRELATION;*fixing_date*;*underlying1*;*underlying2*;*quote* \
+iVOLATILITY;*fixing_date*;*underlying*;*maturity*;*moneyness*;*bid*;*ask* \
+iREPO;*fixing_date*;*underlying*;*maturity*;*bid*;*ask* \
+FORWARD;*fixing_date*;*underlying*;*maturity*;*quote* \
+OPTION;*fixing_date*;*underlying*;*maturity*;*strike*;*call_bid*;*call_ask;*put_bid*; *put_ask* \
 
 Once you have your market data file well located, you can download it into your code using:
 
